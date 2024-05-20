@@ -8,4 +8,9 @@ class Prato(ItemCardapio):
 
     def __str__(self):
         return self._nome   
+    
+    def aplicar_desconto(self):
+        #metodo abstrato 
+        #obrigatorio colocar aqui no elemento filho mas poderia ser o pass que seria tipo em branco
+        self._preco -= (self._preco * 0.05)
  
